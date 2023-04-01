@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project_5</string>
+    <string name="text_1">Pokemón </string>
+    <string name="button">Generate</string>
+    <string name="content">random clash of clan character pictures</string>
+    <string name="message">click generate for random pokemón characters</string>
+</resources>
