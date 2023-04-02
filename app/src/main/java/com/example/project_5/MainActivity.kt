@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
@@ -57,16 +58,27 @@ class MainActivity : AppCompatActivity() {
                     sprites.getString("back_shiny")
                 )
                 photoImageUrl = spriteUrls[Random.nextInt(spriteUrls.size)]
+                photoImageUrl = spriteUrls[Random.nextInt(spriteUrls.size)]
+
+                val name = json.jsonObject.getString("name")
+                val height = json.jsonObject.getDouble("height")
+
+                val nameTextView = findViewById<TextView>(R.id.name)
+                nameTextView.text = "Name: $name"
+
+                val heightTextView = findViewById<TextView>(R.id.height)
+                heightTextView.text = "Height: $height"
             }
-
-
-
-
-
             }]
+
+
+
+
+
+            }
 
         }
 
-    }
+
 
 
